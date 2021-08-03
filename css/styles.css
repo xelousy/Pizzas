@@ -3,7 +3,7 @@
     font-size: 2em;
 }
 body{
-    background-image: url(../css/wood.jpg);
+    background-image: url(../images/pizzaz.jpg);
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,11 +12,14 @@ body{
     font-family: 'Brawler', serif;
 }
 .top {
-    background-color: black;
+    background-color:brown;
+     border-radius: 50px;
     color:#FDB913;
     height: 200px;
-    border-bottom: 5px solid #FDB913;
+    /* border-bottom: 5px solid #FDB913; */
 }
+
+
 .jumbtron {
     margin-right: 700px;
     background-color: inherit;
@@ -44,7 +47,9 @@ body{
 }
 h2 {
     text-align: center;
-    color: #FDB913
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
 }
 .order {
     margin-left: 100px;
@@ -58,7 +63,15 @@ h2 {
 }
 #price-content {
     text-align: center;
-    color: #FDB913
+    /* color: #FDB913 */
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+.delivery{
+    font-size: 50px;
+    color: tomato;
+    font-weight: bold;
 }
 #order-details {
     border: 2px solid black;
@@ -67,7 +80,9 @@ h2 {
     padding-top: 10px;
     padding-right: 50px;
     border-style: dashed;
-    color: #FDB913
+    /* color: #FDB913 */
+    color: black;
+    
 }
 #order-details>h5, h5 {
     font-family: 'Kaushan Script', cursive;
