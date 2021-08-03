@@ -19,7 +19,7 @@ This is a web application where customers order different sizes of pizzas with o
 * Bootstrap - For styling the interface
 * jQuery - To easen use of JavaScript on your website
 ## Live site
-[](https://github.com/xelousy/Pizzas.git)
+[https://xelousy.github.io/Pizzas/](https://github.com/xelousy/Pizzas.git)
 ## Support and contact details
 You can get to me through user@gmail.com.
 ### License.
