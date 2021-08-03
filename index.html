@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-
+    <meta charset="utf-8">
+    <title>Blend Pizza</title>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Kaushan+Script|Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Brawler&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
-<body style="background-image: url(/images/pizy.jpg); background-size: 100%;">
-    <h1>Blend Pizza</h1>
+<body>
     <div class="container">
         <div class="top col-md-12">
             <nav class="navbar navbar-expand-sm navbar navbar-dark">
@@ -20,10 +20,10 @@
                             <a class="nav-link" href="#jumbotron">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#custom-pizza">Pizza-Pricing</a>
+                            <a class="nav-link" href="#custom-pizza">Pizza & Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="order.html">Order</a>
+                            <a class="nav-link" href="#price-content">Order</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -31,13 +31,104 @@
                     </ul>
                 </div>
             </nav>
-            <div class="banner">
-                <h1><b>Pizza Arena</b></h1>
+            <div class="back">
+                <div class="col"></div>
+                <img src="css/pizza.png" alt="pizza"><br>
+                <h5><b>Blend Pizza</b></h5>
+            </div><br>
+        </div><br>
+        <div class="banner">
+            <h1><b>Your main pizza joint</b></h1>
+        </div><br><br>
+        <div class="prices ">
+            <p class="about">The Pizza Palace is an industry leader in the quick service delivery pizza game.<br> Serving hot oven-fresh pizza with its signature all-natural ketchup and using only the freshest ingredients.<br> The homemade pizza dough is
+            produced in-house daily and is another reason why the pizza at The Pizza Palace always tastes better and we have plenty "value-for-money" options that keep our satisfied customers coming back time after time.</p><br><br>
+            <h2>Order here</h2>
+        </div>
+        <form class="form-group" id="custom-pizza">
+            <div class="order">
+                <div class="row">
+                    <div class="col-md-4 col-xs-9">
+                        <div class="card">
+                            <img src="css/p3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sizes of pizza</h5>
+                                <p class="card-text">Choose the size of Pizza:</p>
+                                <select required class="form-control" id="size">
+                                    <option></option>
+                                    <option value="small-pizza">small (500)</option>
+                                    <option value="medium-pizza">medium (750)</option>
+                                    <option value="large-pizza">large (1000)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-9">
+                        <div class="card">
+                            <img src="css/p2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Crust</h5>
+                                <p class="card-text">Choose a crust:</p>
+                                <select required class="form-control" id="crust">
+                                    <option></option>
+                                    <option value="cheese-filled">Cheese filled (100)</option>
+                                    <option value="thick">Thick (150)</option>
+                                    <option value="stuffed">Stuffed (150)</option>
+                                    <option value="crispy">Crispy (150)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-9">
+                        <div class="card">
+                            <img src="css/p1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Toppings</h5>
+                                <p class="card-text">Choose toppings:</p>
+                                <select required class="form-control" id="toppings">
+                                    <option></option>
+                                    <option value="pepperoni">Pepperoni (100)</option>
+                                    <option value="sausage">Sausage (150)</option>
+                                    <option value="bacon">Bacon (200)</option>
+                                    <option value="mushrooms">Mushrooms (150)</option>
+                                    <option value="chicken">Chicken (150)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <button type="submit" class="order-button btn btn-dark" id="submit-pizza">Place Order</button>
+            <input type="number" id="amount" placeholder="Number of pizzas"required>
+        </form>
+        <div class="col-xs-4" id="price-content">
+            <h1 class="page-header">Cart</h1>
+            <h2>Price: Ksh <span id="final-cost"></span></h2><br><br>
+            <div id="deliver" class="deliver">
+                <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>
+                <form id="address-form">
+                    <div class="col-xs-6">
+                        <label for="first-name"></label>
+                        <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
+                        <button class="btn btn-dark complete" type="submit">Enter</button>
+                        <h3><span id="delivery-option"></span></h3>
+                    </div>
+                </form>
+            </div><br>
+            <button type="btn" class="btn btn-dark" id="checkout-btn">Checkout</button><br><br>
+            <div id="order-details" class="col-xs-12">
+                <ul id="pizza-details"><strong>Your order is: </strong></ul>
+                <h5 id="pizza-details">Thank you and Welcome again!</h5>
             </div>
         </div>
-    <h3>It is easy to order our different flavoured pizza at Blend Pizza! Contactless carryout and delivery options available.</h3>
-    <form class="form-group" id="custom-pizza">
-        
-
+        <footer id="contact" class="footer" size="240px">
+            <a class="footer-link" href="https://www.linkedin.com/in/saramunini"><i class="fab fa-linkedin"></i></a>
+            <a class="footer-link" href="https://twitter.com/pixel_tiny"><i class="fab fa-twitter-square"></i></a>
+            <p class="copyright"> © 2019 The Pizza Palace </p>
+        </footer>
+        <script src="js/jQuery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/scripts.js"></script>
+    </div>
 </body>
 </html>

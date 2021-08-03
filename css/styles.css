@@ -1,0 +1,135 @@
+.jumbtron>p, .page-header, #price-content>h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2em;
+}
+body{
+    background-image: url(../css/wood.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    line-height: 1.62em;
+    font-family: 'Brawler', serif;
+}
+.top {
+    background-color: black;
+    color:#FDB913;
+    height: 200px;
+    border-bottom: 5px solid #FDB913;
+}
+.jumbtron {
+    margin-right: 700px;
+    background-color: inherit;
+    color:  #FDB913;
+    margin-top: 60px;
+}
+.about {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
+    color:  #FDB913;
+}
+.card {
+    width: 80%;
+    min-height: 460px;
+    margin-top: 60px;
+    box-shadow: 0px 8px 60px -10px rgba(13, 28, 39, 0.6);
+    background: #fff;
+    border-radius: 12px;
+    max-width: 700px;
+    position: relative;
+    color:  #FDB913;
+}
+h2 {
+    text-align: center;
+    color: #FDB913
+}
+.order {
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #FDB913
+  }
+#submit-pizza {
+    float: right;
+    margin-right: 200px;
+    color: #FDB913
+}
+#price-content {
+    text-align: center;
+    color: #FDB913
+}
+#order-details {
+    border: 2px solid black;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 10px;
+    padding-right: 50px;
+    border-style: dashed;
+    color: #FDB913
+}
+#order-details>h5, h5 {
+    font-family: 'Kaushan Script', cursive;
+}
+.footer {
+    text-align: center;
+    font-size: 25px;
+    color: #FDB913
+}
+.footer-link {
+    color: #FDB913
+}
+.icons{
+    size: 50%;
+    width: 50%;
+    margin-right: 10px;
+}
+.back h5{
+    color:#FDB913;
+    margin-left: 10px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3em;
+}
+.back img{
+    width: 5%;
+    display: inline;
+    background-color: black;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.nav-link{
+    color: #FDB913;
+}
+.banner{
+    color: #FDB913;
+    background-image: url(../css/p4.jpg);
+    height: 600px;
+}
+.banner h1{
+    border-top: 6px double bisque;
+    border-bottom: 6px double bisque;
+    animation: fromLeft;
+    animation-duration: 4s; 
+    animation-delay: 1.125s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    text-align: center;
+    margin-top: 100px;
+}
+@keyframes fromLeft {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px)
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#amount{
+    margin-left: 35%;
+}
